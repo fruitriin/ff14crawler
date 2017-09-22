@@ -1,0 +1,201 @@
+/*For FF14Crawler
+ * 
+ */
+html {
+	text-align: center;
+	font: 13px;
+	*font-size: small;
+	*font: x-small;
+	font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'MS P Gothic', sans-serif;
+	padding-bottom: 50px;
+	background-color:black;
+	color:#CCC;
+}
+a{
+	color:#BFA34C;
+}
+.button{
+	color:#BFA34C;
+	text-decoration: underline;
+}
+.button:hover{
+	cursor:pointer;
+}
+
+ul,li{
+	padding-left:0;
+}
+ul{
+	margin-left:0;
+}
+li{
+	margin-left:1em;
+}
+ul ul{
+	margin-left:1em;
+}
+p{
+	margin-top:0.5em;
+	margin-bottom:1.5em;
+}
+
+header{
+	color:#4C4026;
+	border:solid 3px #CDAF70;
+	border-radius:3px;
+	padding-top:10px;
+	padding-bottom:10px;
+	background-color:#193B54;
+}
+header div{
+		background-color:#D9CFB6;
+		padding-top:5px;
+		padding-bottom:5px;
+}
+
+h1{
+	font-size:2em;
+    display:inline;
+  /*  background-color:#1C1C1C;*/
+}
+h1 a{
+    color:#4C4026;
+}
+h2,h3{
+	color:#E5CC7E;
+	background-color:#1C1C1C;
+	padding-top:5px;
+	padding-left:20px;
+	padding-bottom:8px;
+	margin-left:-20px;
+	margin-right:0px;
+
+}
+h2{
+	font-size:1.5em;
+	margin-top:0.8em;
+	margin-bottom:0;
+}
+h3{
+	font-size:1.2em;
+	margin-top:0;
+
+}
+
+.curtain {
+    height: 30px;
+    line-height: 30px;
+    padding-left: 50px;
+    font-size: 1.0em;
+/*    background: #ddd; */
+    position: relative;
+/*    border: 1px solid #333;*/
+}
+.curtain:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 10px;
+    border-left: 15px solid #A5371D;
+    border-right: 15px solid #A5371D;
+    border-top: 40px solid #A5371D;
+    border-bottom: 15px solid transparent;
+}
+
+h4{
+	color:#FFF;
+	background-color:#1C1C1C;
+	padding-top:5px;
+	padding-left:20px;
+	padding-bottom:8px;
+	margin-left:-20px;
+	margin-right:0px;
+	margin-top:0.8em;
+}
+
+
+
+div#wrap {
+	margin: 0 auto;
+	width: 1024px;
+	position: relative;
+}
+#main{
+	min-height:700px;
+	width:830px;
+	font-size: 80%;
+	text-align: left;
+}
+
+.content{
+	background-color:#262626;
+	border-radius: 5px;
+	border:solid, 5px, #262626;
+	margin-top:10px;
+	padding-top:5px;
+	padding-bottom:10px;
+	padding-left:20px;
+}
+
+
+	table{
+		font-size:130%;
+	}
+	td{
+		width:10px;
+	}
+	td.Name{
+		width:auto;
+		white-space: nowrap;
+	}
+
+
+#sidebar {
+	padding-top:10px;
+	font-size: 80%;
+	position: absolute;
+	left: 1034;
+	right: 10px;
+	top: 52px;
+	width: 170px;
+	text-align:left;
+}
+
+footer{
+	position: relative;
+	width:840px;
+	padding-right:170px;
+	font-size: 80%;
+}
+
+#socialbuttons div {
+	float: left;
+}
+.Lv10{
+	background-color:#222;
+}
+.Lv20{
+	background-color:#044;
+}
+.Lv30{
+	background-color:#040;
+}
+.Lv40{
+	background-color:#004;
+}
+.Lv50{
+	background-color:#400;
+}
+.Lv60{
+	background-color:#440;
+}
+.Lv70{
+    background-color:#960;
+}
+.ads{
+	background-color:black;
+	text-align:center;
+}

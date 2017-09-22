@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>FF14 ロードストーンFCLSメンバービューア</title>
+<meta name="description" content="新生FF14のフリーカンパニー、リンクシェルのメンバーのクラス/ジョブレベルを一纏めにして表示するサイトです">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="stylesheet" href="resource/style.css" />
+<script src="resource/jquery-2.0.3.min.js"></script>
+<script src="resource/14Crawler.js" type="text/javascript"></script>
+<script src="http://fruitriin.sakura.ne.jp/FF14Crawler/count/txcount.cgi" type="text/javascript"></script>
+<script src="http://fruitriin.sakura.ne.jp/common/sidebar.js" type="text/javascript"></script>
+<script src="resource/jquery.socialbutton-1.9.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="wrap">
+
+<section id="main">
+<header>
+	<div>
+	<h1><a href="./">FF14 ロードストーンFCLSメンバービューア</a></h1>
+	</div>
+</header>
+	<div class="content">
+		<div class="inner">
+		<p>このサイトは、<a href="http://jp.finalfantasyxiv.com/lodestone/">FINAL FANTASY XIV, The Lodestone</a>から<br>
+		公開情報を用いてフリーカンパニー、リンクシェルのメンバーの全ジョブ、クラスのレベルを一覧することを目的としています。</p>
+		<p>各種コンテンツに突入する際のメンバー及びクラスの選定、生産の依頼等に役立つかと思います。</p>
+		<p>ログインが必要な情報、非公開の情報を活用することはありません。</p>
+		<p class="counter"> </p>
+		<div id="inputArea">
+			FCまたはLSのページのURLを入力<br>
+			<input type="text" name="URL">				
+			<input type="submit" value="取得">
+		</div>
+		<br>
+		</div>
+		<div id="tableArea"> </div>
+		<div class="inner">
+		<br>
+		<hr>
+	    <div id="socialbuttons" class="clearfix">
+	      <div class="twitter"> </div>
+	      <div class="facebook"> </div>
+	      <div class="google"> </div>
+	      <div class="hatena"> </div>
+	    </div><br clear="all">
+    	</div>
+    	</div>
+	<div class="content FAQ">
+		<h4>Q &amp; A</h4>
+		<ul>
+			<li>Q.やってみたけど全く何も表示が変わらない</li>
+			<ul>
+				<li>A1.腐った牛乳死すべき！（訳：モダンブラウザでしか動きません）</li>
+				<li>A2.ロードストーンのHTML構造が変わった可能性あり。中の人に連絡を</li>
+			</ul>
+			<li>Q.くそ遅い</li>
+			<ul><li>2回目以降は早くなるのでじっとまっててくれ。なおキャッシュは現在12時間の模様</li></ul>
+			<li>Q.ロードストーンと微妙にレベルちがくね？</li>
+			<ul><li>A.負荷軽減のために12時間のキャッシュを行っているのでたぶんそのせい。</li></ul>
+			<li>Q.見栄えがクソ/使いにくい</li>
+			<ul><li>
+				A.ぼくのかんがえたさいきょーのでざいん/きのうをみせてください。もしかしたら採用するかも。
+			</li></ul>
+			<li>Q.規約的に大丈夫？</li>
+			<ul><li>
+				A.ファイナルファンタジーXIV 著作物利用許諾条件読む限り、<br>
+				<i>1.利用できる著作物（以下「本著作物」といいます）<br>
+				ファイナルファンタジーXIV公式サイト、公式フォーラム、および関連サイト内に掲載されているテキスト・情報・画像・動画</i><br>
+				とあるし、
+				ロードストーン利用規約読む限り、二次利用禁止とか書かれてないし、<br>むしろクラス情報なんかは公開情報なので非表示にできないとか書いてあったから大丈夫かなぁと思うんだけどどうなんだろう。
+			</li></ul>
+		</ul>
+	</div>
+	<div class="content future">
+		<h4>今後の予定</h4>
+		<ul>
+			<li>主な機能は実装し終わったのではないかと</li>
+		</ul>
+	</div>
+	<div class="history content">
+		<h4>更新履歴</h4>
+		<ul>
+            <li>ver1.6.1 - 2016/02/24</li>
+            <ul>
+                <li>設定のコンバートロジックがバグっていたらしいのを修正
+                </li>
+            </ul>
+            <li>ver1.6.0 - 2015/06/30</li>
+            <ul>
+                <li>イシュガルドのExJobに対応
+                </li>
+                <li>Lv60～の配色に対応。ちょっと色が変カモ
+                </li>
+            </ul>
+			<li>ver1.5.0 - 2013/11/02</li>
+			<ul>
+				<li>表形式の表示の際に、読み込みが完了した時点で各キャラクターの名前にロードストーンのページへリンクを張るようにした。
+				</li>
+			</ul>
+			<li>ver1.5.1 - 2014/03/29</li>
+			<ul>
+				<li>ロードストーンのページのHTML仕様変更に対応
+				</li>
+			</ul>
+			<li>ver1.5.2 - 2014/11/03</li>
+			<ul>
+				<li>双剣士に対応
+				</li>
+			</ul>
+			<li>ver1.4.0 - 2013/10/06</li>
+			<ul>
+				<li>開いてるFC/LSと表示形式をURLで保存できるようになった。<br>
+					表示復帰URLのリンク先をブックマーク等で復帰可能。
+				</li>
+			</ul>
+			<li>ver1.3.0 - 2013/09/28</li>
+			<ul>
+				<li>表示形式にリスト形式クラスレベルランキングが選択できるようになった。</li>
+			</ul>
+			<li>ver1.2.0 - 2013/09/07</li>
+			<ul>
+				<li>表示形式をデフォルト（ファイター/ソーサラー）/ロール　＋ギャザクラの２種類から選べるようになった。</li>
+				<ul><li>設定は保存される。表示が反映されるのは全ての読み込みが終わったあと。</li></ul>
+			</ul>
+			<li>ver1.2.1 - 2013/09/08</li>
+			<ul>
+				<li>リンクシェル/フリーカンパニーの選択履歴からロードストーン内の該当ページへのリンクしているアイコン追加</li>
+			</ul>			
+			<li>ver1.2.2 - 2013/09/11</li>
+			<ul>
+				<li>Firefox以外のブラウザで、読み込み中に一切途中経過を描画してくれないバグを修正</li>
+			</ul>			
+			<li>ver1.1.0 - 2013/09/02</li>
+			<ul>
+				<li>LS/FCの入力履歴の保存と、履歴からの表示、履歴の削除ができるようになった。</li>
+				<li>現在表示しているLS/FCの名前が表示されるようになった。</li>
+			</ul>
+			<li>ver1.0.0 - 2013/09/01</li>
+			<ul>
+				<li>すべてPHPで処理していたのを、キャッシュはPHPでの処理、表示関係はJavaScriptでの処理に分割
+					<ul><li>取得できたキャラクターから順次表示可能に</li>
+						<li>代わりにモダンブラウザでしか動かない</li>
+					</ul>
+				<li>レベルに応じて背景色が変化</li>
+				<li>カラーテーマの大幅な変更</li>
+			</ul>
+			<li>ver1.0.1 - 2013/09/02</li>
+			<ul><li>違うキャラクターのレベルを表示してしまうことがあるバグを修正</li></ul>
+			<li>ver1.0.2 - 2013/09/02</li>
+			<ul><li>' を含む名前のキャラクターのレベルが表示されないバグを修正</li></ul>
+			<li>ver1.0.3 - 2013/09/02</li>
+			<ul><li>取得ボタンを連打できないように、読み込み中はその旨を表示するように変更</li></ul>
+		</ul>
+		<ul>
+			<li>ver0.1.x rev2013/08/28</li>
+			<ul><li>初版公開</li></ul>
+		</ul>
+	</div>
+	
+</section>
+
+		
+	
+
+	<section id="sidebar">
+		<div class="content">
+		<nav>
+			<ul>
+				<li>FFXIV公式</li>
+				<ul><li><a href="http://jp.finalfantasyxiv.com/lodestone/">公式サイト</a></li>
+					<li><a href="http://forum.square-enix.com/ffxiv/forum.php">公式フォーラム</a></li>
+					<li><a href="http://jp.finalfantasyxiv.com/lodestone/">ロードストーン</a></li>
+				</ul>
+				<li>Wiki</li>
+				<ul><li><a href="http://ff14wiki.info/">FF14 Online Wiki</a></li>
+					<li><a href="http://ff14n.wikiwiki.jp/">FFXIV n Wiki*</a></li>
+					<li><a href="http://ff14.ffo.jp/">FF14用語辞典</a></li>
+				</ul>
+				<ul>ホームページ</ul>
+				<li><a href="http://www5.plala.or.jp/SQR/ff14/index.html">eLeMeN - FF14</a></li>
+			</ul>
+			
+			
+			<hr>
+			<ul class="commonSidebar">
+
+          	</ul>
+		</nav>
+		</div>
+		<div class="content ads">
+			<script type="text/javascript">
+			google_ad_client = "ca-pub-5973846129825898";
+			/* FF14LSクローラー */
+			google_ad_slot = "7831585559";
+			google_ad_width = 120;
+			google_ad_height = 600;
+			
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+		</div>
+	</section>
+	
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-42820292-2']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	window.google_analytics_uacct = "UA-42820292-2";
+	</script>
+	<footer>
+			<p>
+				Copyright  by <a href="https://twitter.com/Riin_dev">Twitter@Riin</a><br>
+				記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。
+			</p>
+	</footer>
+</div>
+</body>
+</html>
