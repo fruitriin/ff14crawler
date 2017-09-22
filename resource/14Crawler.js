@@ -1,7 +1,7 @@
 var version = "1.6.1";
 
 $.ajaxSetup({
-	url:"resource/coreEngine.php",
+	url:"coreEngine.php",
 	method:"POST",
 	dataType:"json"
 });
