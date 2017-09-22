@@ -1,6 +1,6 @@
 <?php
-include_once 'phpQuery-onefile.php';
-require_once dirname(__FILE__) . '/cache.php';
+include_once 'resource/phpQuery-onefile.php';
+require_once dirname(__FILE__) . '/resource/cache.php';
 $debug = "false";
 
 if($debug){
