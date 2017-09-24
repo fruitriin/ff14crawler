@@ -1,15 +1,7 @@
 <?php
 include_once 'resource/phpQuery-onefile.php';
 require_once dirname(__FILE__) . '/resource/cache.php';
-$debug = "true";
-
-if($debug){
-
-//print_r(getCharList("http://jp.finalfantasyxiv.com/lodestone/linkshell/21392098230010858", $emptyList));
-//print_r(getCharClass("/lodestone/character/1584183/"));
-//print_r($_POST);
-}
-
+$debug = "false";
 
 if(isset($_POST['func'])){
     switch ($_POST['func']) {
