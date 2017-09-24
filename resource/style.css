@@ -3,15 +3,10 @@
  */
 html {
     text-align: center;
-    font-size: 13px;
     font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'MS P Gothic', sans-serif;
     padding-bottom: 50px;
     background-color: black;
     color: #CCC;
-}
-
-body {
-    font-size: small;
 }
 
 a {
