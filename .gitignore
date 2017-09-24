@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+cache/character/*
+!cache/character/index.html
+!cache/freecompany/index.html
+!cache/linkshell/index.html
+cache/freecompany/*
+cache/linkshell/*

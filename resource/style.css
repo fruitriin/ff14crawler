@@ -175,25 +175,29 @@ footer{
 	float: left;
 }
 .Lv10{
-	background-color:#222;
+
 }
 .Lv20{
-	background-color:#044;
+	background-color:#066;
+
 }
 .Lv30{
-	background-color:#040;
+	background-color:#369;
 }
 .Lv40{
-	background-color:#004;
+	background-color:#669;
 }
 .Lv50{
-	background-color:#400;
+	background-color:#936;
 }
 .Lv60{
-	background-color:#440;
+	background-color:#960;
 }
 .Lv70{
-    background-color:#960;
+	background-color:#004;
+}
+.Lv80{
+	background-color:#400;
 }
 .ads{
 	background-color:black;

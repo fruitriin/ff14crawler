@@ -29,6 +29,9 @@ class Cache
     public function get($key)
     {
         $filePath = $this->getFilePath($key);
+		if(isset($_POST["LifeTime"])){
+			$this->_lifeTime = $_POST["LifeTime"];
+		}
         if (file_exists($filePath) && (filemtime($filePath) + $this->_lifeTime) > time())
         {
 //            return unserialize(file_get_contents($filePath));
