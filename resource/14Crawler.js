@@ -703,3 +703,13 @@ function objSort(obj, key, key2, key3, isNumber, reverse) {
 
     return arr;
 }
+
+//ヒストリツリーの開閉
+$(function(){
+    var tree = $(".tree");
+    tree.children("ul").hide()
+    tree.children("h4").click(function(){
+        $(this).parent().children("ul").toggle(500);
+    })
+
+})
