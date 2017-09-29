@@ -1,3 +1,0 @@
-$(function() {
-	$("p.counter").html("カウンタ: <!-- count -->　（今日:<!-- today --> 昨日:<!-- yesterday -->)");
-});
