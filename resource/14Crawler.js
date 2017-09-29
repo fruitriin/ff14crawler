@@ -598,35 +598,6 @@ function setListAsClass() {
 }
 
 
-//ソーシャルボタン
-$(function () {
-    var URL = "http://fruitriin.sakura.ne.jp/FF14Crawler/";
-    var title = "FF14 ロードストーンFCLSメンバービューア";
-    $("#socialbuttons .twitter").socialbutton("twitter", {
-        button: "horizontal",
-        text: title + " via FruitRiin",
-        url: URL,
-    }).width(95);
-
-    $("#socialbuttons .facebook").socialbutton("facebook_like", {
-        button: "button_count",
-        url: URL,
-    }).width(110);
-
-    $("#socialbuttons .google").socialbutton("google_plusone", {
-        button: "medium",
-        url: URL,
-        count: true,
-    }).width(70);
-
-    $("#socialbuttons .hatena").socialbutton("hatena", {
-        button: "standard",
-        url: URL,
-        title: title,
-    }).width(70);
-});
-
-
 /*Defferdのループ
  * jQuery.Deferredを使って非同期ループしよう！ - とあるプログラマの日記 @s025236
  *  http://d.hatena.ne.jp/s025236/20130624/p1
